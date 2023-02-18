@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Axel Sparta</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3cec4091c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <!-- Reset -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <!-- HAMBURGER -->
+    <link rel="stylesheet" href="./dist/hamburgers.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <article class="header__brand">
+        <a class="header__brand__link" href="#sobre-mi">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
+      </article>
+      <nav id="nav" class="nav">
+        <ul class="nav__list">
+          <li class="list__item">
+            <a href="#sobre-mi" class="item__link item__link--active"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="list__item">
+            <a href="#habilidades" class="item__link">Habilidades</a>
+          </li>
+          <li class="list__item">
+            <a href="#proyectos" class="item__link">Proyectos</a>
+          </li>
+          <li class="list__item">
+            <a href="#contacto" class="item__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="menu-btn" class="hamburger hamburger--emphatic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </header>
+
+    <main>
+      <section id="sobre-mi">
+        <div class="card">
+          <img
+            src="https://placeimg.com/300/300/people"
+            alt="person"
+            class="card__img"
+          />
+          <h1 class="card__title">
+            Axel Sparta <br />
+            <span class="card__title--secondary">Desarrollador web</span>
+          </h1>
+        </div>
+        <div class="about">
+          <h2 class="about__title">Sobre mi</h2>
+          <p class="about__p">
+            Mi nombre es Axel Sparta, vivo en Mendoza, Argentina. Soy
+            desarrollador web autodidacta y estudiante en ingeniería en sistemas
+            de información en la universidad Tecnológica Nacional
+          </p>
+          <p class="about__p">
+            Tengo un interés especial en el desarrollo web, dominando
+            principalmente por el Front-end, pero también me puedo defender en
+            el Back-end
+          </p>
+        </div>
+      </section>
+      <section class="skills__container" id="habilidades">
+        <div class="skill__card">
+          <h3>Front-end</h3>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-react-original-wordmark colored"></i>
+          <i class="devicon-redux-original colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark"></i>
+        </div>
+        <div class="skill__card">
+          <h3>Back-end</h3>
+          <i class="devicon-nodejs-plain colored"></i>
+          <i class="devicon-express-original-wordmark"></i>
+          <i class="devicon-mongodb-plain-wordmark colored"></i>
+        </div>
+        <div class="skill__card">
+          <h3>Herramientas</h3>
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-npm-original-wordmark colored"></i>
+        </div>
+      </section>
+      <section id="proyectos" class="projects__container">
+        <div class="project__card">
+          <img
+            class="project__card__img"
+            src="https://placeimg.com/300/300/tech"
+            alt="proyecto"
+          />
+          <div class="project__card__info">
+            <h4 class="project__card__title">Nombre del proyecto</h4>
+            <p class="project__card__p">Creado con React</p>
+            <button class="project__card__btn">Ver más</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img
+            class="project__card__img"
+            src="https://placeimg.com/300/300/tech"
+            alt="proyecto"
+          />
+          <div class="project__card__info">
+            <h4 class="project__card__title">Nombre del proyecto</h4>
+            <p class="project__card__p">Creado con React</p>
+            <button class="project__card__btn">Ver más</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img
+            class="project__card__img"
+            src="https://placeimg.com/300/300/tech"
+            alt="proyecto"
+          />
+          <div class="project__card__info">
+            <h4 class="project__card__title">Nombre del proyecto</h4>
+            <p class="project__card__p">Creado con React</p>
+            <button class="project__card__btn">Ver más</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto">
+      <div class="footer__socialmedia">
+        <a href="">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <div class="footer__contact">
+        <h2>Form</h2>
+      </div>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

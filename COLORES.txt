@@ -1,0 +1,2 @@
+--dark-color: #2d3436;
+--light-color: #ecf0f1;
