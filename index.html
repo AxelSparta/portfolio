@@ -39,35 +39,47 @@
   </head>
 
   <body>
-    <header class="header">
-      <article class="header__brand">
-        <a class="header__brand__link" href="#sobre-mi">
-          <img src="./assets/logo.png" alt="logo" />
-        </a>
-      </article>
-      <nav id="nav" class="nav">
-        <ul class="nav__list">
-          <li class="list__item">
-            <a href="#sobre-mi" class="item__link item__link--active"
-              >Sobre mi</a
-            >
-          </li>
-          <li class="list__item">
-            <a href="#habilidades" class="item__link">Habilidades</a>
-          </li>
-          <li class="list__item">
-            <a href="#proyectos" class="item__link">Proyectos</a>
-          </li>
-          <li class="list__item">
-            <a href="#contacto" class="item__link">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <button id="menu-btn" class="hamburger hamburger--emphatic" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+    <header class="header__wrapper" data-theme>
+      <div class="header container" data-theme>
+        <article class="header__brand">
+          <a class="header__brand__link" href="#sobre-mi">
+            <img src="./assets/logo.png" alt="logo" />
+          </a>
+        </article>
+        <div class="header__nav__container">
+          <nav id="nav" class="nav" data-theme>
+            <ul class="nav__list">
+              <li class="list__item">
+                <a href="#sobre-mi" class="item__link item__link--active" data-theme
+                  >Sobre mi</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="#habilidades" class="item__link" data-theme>Habilidades</a>
+              </li>
+              <li class="list__item">
+                <a href="#proyectos" class="item__link" data-theme>Proyectos</a>
+              </li>
+              <li class="list__item">
+                <a href="#contacto" class="item__link" data-theme>Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="theme__button" data-theme>
+            Tema oscuro
+          </button>
+        </div>
+        <button
+          id="menu-btn"
+          class="hamburger hamburger--emphatic"
+          type="button"
+          data-theme
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
     </header>
 
     <main>

@@ -15,7 +15,9 @@
 
 .card__img {
   display: block;
-  width: 100%;
+  width: 300px;
+  object-fit: cover;
+  height: 350px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -28,6 +30,10 @@
 .card__title--secondary {
   font-size: 1.25rem;
 }
+
+.about {
+  padding: 2rem 4rem;
+}
 .about__title {
   margin-bottom: 1rem;
   text-align: center;
@@ -36,6 +42,7 @@
 .about__p {
   font-size: 1.115rem;
   margin: 0.5rem 0;
+  line-height: 120%;
 }
 
 @media (min-width: 992px) {
@@ -44,7 +51,6 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    gap: 1.5rem;
   }
   .card {
     min-width: 300px;

@@ -1,5 +1,6 @@
 :root {
   --dark-color: #2d3436;
+  --dark-dark-color: #202425;
   --light-color: #f6f6f6;
   --dark-light: #727272;
   --primary-color: #fed330;
@@ -10,14 +11,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
+  background-color: var(--light-color);
 }
 
 main {
@@ -33,6 +27,15 @@ h3 {
   font-size: 1.75rem;
   font-weight: bold;
 }
+
 h4 {
   font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
