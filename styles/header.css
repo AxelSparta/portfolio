@@ -142,7 +142,15 @@
   }
 
   .item__link--active {
-    font-weight: bold;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    color: var(--light-color);
+  }
+
+  .item__link--active.dark-theme {
+    background-color: var(--light-color);
+    border-radius: 5px;
+    color: var(--dark-color);
   }
 
   .item__link:hover {

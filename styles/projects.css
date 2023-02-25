@@ -60,6 +60,11 @@
 
 .project__card__p {
   margin: 1rem;
+  line-height: 150%;
+}
+.project__card__links {
+  display: flex;
+  justify-content: center;
 }
 .project__card__btn {
   display: block;
@@ -70,7 +75,7 @@
   border-radius: 1rem;
   padding: 0.75rem 0.75rem;
   margin: 0 auto;
-  transition: ease 0.5s;
+  transition: ease 0.5s all;
 }
 .project__card__btn:hover {
   color: var(--dark-color);

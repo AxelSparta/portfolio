@@ -43,7 +43,7 @@
   </head>
 
   <body>
-    <header class="header__wrapper" data-theme>
+    <header class="header__wrapper" data-theme data-scroll-spy-section>
       <div class="header container" data-theme>
         <article class="header__brand">
           <a class="header__brand__link" href="#sobre-mi">
@@ -56,21 +56,38 @@
               <li class="list__item">
                 <a
                   href="#sobre-mi"
-                  class="item__link item__link--active"
+                  class="item__link"
                   data-theme
+                  data-scroll-spy
                   >Sobre mi</a
                 >
               </li>
               <li class="list__item">
-                <a href="#habilidades" class="item__link" data-theme
+                <a
+                  href="#habilidades"
+                  class="item__link"
+                  data-theme
+                  data-scroll-spy
                   >Habilidades</a
                 >
               </li>
               <li class="list__item">
-                <a href="#proyectos" class="item__link" data-theme>Proyectos</a>
+                <a
+                  href="#proyectos"
+                  class="item__link"
+                  data-theme
+                  data-scroll-spy
+                  >Proyectos</a
+                >
               </li>
               <li class="list__item">
-                <a href="#contacto" class="item__link" data-theme>Contacto</a>
+                <a
+                  href="#contacto"
+                  class="item__link"
+                  data-theme
+                  data-scroll-spy
+                  >Contacto</a
+                >
               </li>
             </ul>
           </nav>
@@ -92,14 +109,10 @@
     </header>
 
     <main>
-      <section id="sobre-mi" data-theme>
+      <section id="sobre-mi" data-theme data-scroll-spy-section>
         <div class="container sobre-mi">
           <div class="card" data-theme>
-            <img
-              src="https://placeimg.com/300/300/people"
-              alt="person"
-              class="card__img"
-            />
+            <img src="./assets/me.jpeg" alt="person" class="card__img" />
             <h1 class="card__title">
               Axel Sparta <br />
               <span class="card__title--secondary">Desarrollador web</span>
@@ -120,7 +133,7 @@
           </div>
         </div>
       </section>
-      <section id="habilidades" data-theme>
+      <section id="habilidades" data-theme data-scroll-spy-section>
         <div class="container skills__container">
           <div class="skill__card">
             <h3>Front-end</h3>
@@ -144,7 +157,7 @@
           </div>
         </div>
       </section>
-      <section id="proyectos" data-theme>
+      <section id="proyectos" data-theme data-scroll-spy-section>
         <h2>Proyectos</h2>
         <div class="container projects__container">
           <div class="project__card">
@@ -154,49 +167,76 @@
               alt="proyecto"
             />
             <div class="project__card__info">
-              <h4 class="project__card__title">Nombre del proyecto</h4>
-              <p class="project__card__p">Creado con React</p>
-              <button class="project__card__btn">Ver más</button>
+              <h4 class="project__card__title">Blog</h4>
+              <p class="project__card__p">
+                Creado con react y back-end hecho con Node js
+              </p>
+              <div class="project__card__links">
+                <a
+                  class="project__card__btn"
+                  href="https://axel-blog-dev.netlify.app"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <i class="fa-solid fa-link"></i>
+                </a>
+                <a
+                  class="project__card__btn"
+                  href="https://github.com/AxelSparta/blog-vite"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div class="project__card">
             <img
               class="project__card__img"
-              src="https://placeimg.com/300/300/tech"
+              src="./assets/portfolio-image.png"
               alt="proyecto"
             />
             <div class="project__card__info">
-              <h4 class="project__card__title">Nombre del proyecto</h4>
-              <p class="project__card__p">Creado con React</p>
-              <button class="project__card__btn">Ver más</button>
-            </div>
-          </div>
-          <div class="project__card">
-            <img
-              class="project__card__img"
-              src="https://placeimg.com/300/300/tech"
-              alt="proyecto"
-            />
-            <div class="project__card__info">
-              <h4 class="project__card__title">Nombre del proyecto</h4>
-              <p class="project__card__p">Creado con React</p>
-              <button class="project__card__btn">Ver más</button>
+              <h4 class="project__card__title">Portfolio</h4>
+              <p class="project__card__p">Creado con HTML, CSS y Javascript</p>
+              <div class="project__card__links">
+                <a class="project__card__btn" href="#sobre-mi">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+                <a
+                  class="project__card__btn"
+                  href="https://github.com/AxelSparta/portfolio"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer id="contacto">
+    <footer id="contacto" data-scroll-spy-section>
       <div class="container footer__container">
         <div class="footer__socialmedia">
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/axel-sparta-web/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a href="">
+          <a href="mailto:axelnicolassparta@gmail.com">
             <i class="fa-regular fa-envelope"></i>
           </a>
-          <a href="">
+          <a
+            href="https://github.com/AxelSparta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
