@@ -24,6 +24,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/3cec4091c8.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Reset -->
     <link rel="stylesheet" href="./styles/reset.css" />
@@ -50,12 +54,17 @@
           <nav id="nav" class="nav" data-theme>
             <ul class="nav__list">
               <li class="list__item">
-                <a href="#sobre-mi" class="item__link item__link--active" data-theme
+                <a
+                  href="#sobre-mi"
+                  class="item__link item__link--active"
+                  data-theme
                   >Sobre mi</a
                 >
               </li>
               <li class="list__item">
-                <a href="#habilidades" class="item__link" data-theme>Habilidades</a>
+                <a href="#habilidades" class="item__link" data-theme
+                  >Habilidades</a
+                >
               </li>
               <li class="list__item">
                 <a href="#proyectos" class="item__link" data-theme>Proyectos</a>
@@ -66,7 +75,7 @@
             </ul>
           </nav>
           <button class="theme__button" data-theme>
-            Tema oscuro
+            <i class="fa-solid fa-moon"></i>
           </button>
         </div>
         <button
@@ -83,108 +92,149 @@
     </header>
 
     <main>
-      <section id="sobre-mi">
-        <div class="card">
-          <img
-            src="https://placeimg.com/300/300/people"
-            alt="person"
-            class="card__img"
-          />
-          <h1 class="card__title">
-            Axel Sparta <br />
-            <span class="card__title--secondary">Desarrollador web</span>
-          </h1>
-        </div>
-        <div class="about">
-          <h2 class="about__title">Sobre mi</h2>
-          <p class="about__p">
-            Mi nombre es Axel Sparta, vivo en Mendoza, Argentina. Soy
-            desarrollador web autodidacta y estudiante en ingeniería en sistemas
-            de información en la universidad Tecnológica Nacional
-          </p>
-          <p class="about__p">
-            Tengo un interés especial en el desarrollo web, dominando
-            principalmente por el Front-end, pero también me puedo defender en
-            el Back-end
-          </p>
-        </div>
-      </section>
-      <section class="skills__container" id="habilidades">
-        <div class="skill__card">
-          <h3>Front-end</h3>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <i class="devicon-react-original-wordmark colored"></i>
-          <i class="devicon-redux-original colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark"></i>
-        </div>
-        <div class="skill__card">
-          <h3>Back-end</h3>
-          <i class="devicon-nodejs-plain colored"></i>
-          <i class="devicon-express-original-wordmark"></i>
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-        </div>
-        <div class="skill__card">
-          <h3>Herramientas</h3>
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-npm-original-wordmark colored"></i>
-        </div>
-      </section>
-      <section id="proyectos" class="projects__container">
-        <div class="project__card">
-          <img
-            class="project__card__img"
-            src="https://placeimg.com/300/300/tech"
-            alt="proyecto"
-          />
-          <div class="project__card__info">
-            <h4 class="project__card__title">Nombre del proyecto</h4>
-            <p class="project__card__p">Creado con React</p>
-            <button class="project__card__btn">Ver más</button>
+      <section id="sobre-mi" data-theme>
+        <div class="container sobre-mi">
+          <div class="card" data-theme>
+            <img
+              src="https://placeimg.com/300/300/people"
+              alt="person"
+              class="card__img"
+            />
+            <h1 class="card__title">
+              Axel Sparta <br />
+              <span class="card__title--secondary">Desarrollador web</span>
+            </h1>
+          </div>
+          <div class="about">
+            <h2 class="about__title">Sobre mi</h2>
+            <p class="about__p">
+              Mi nombre es Axel Sparta, vivo en Mendoza, Argentina. Soy
+              desarrollador web autodidacta y estudiante en ingeniería en
+              sistemas de información en la universidad Tecnológica Nacional
+            </p>
+            <p class="about__p">
+              Tengo un interés especial en el desarrollo web, dominando
+              principalmente por el Front-end, pero también me puedo defender en
+              el Back-end
+            </p>
           </div>
         </div>
-        <div class="project__card">
-          <img
-            class="project__card__img"
-            src="https://placeimg.com/300/300/tech"
-            alt="proyecto"
-          />
-          <div class="project__card__info">
-            <h4 class="project__card__title">Nombre del proyecto</h4>
-            <p class="project__card__p">Creado con React</p>
-            <button class="project__card__btn">Ver más</button>
+      </section>
+      <section id="habilidades" data-theme>
+        <div class="container skills__container">
+          <div class="skill__card">
+            <h3>Front-end</h3>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+            <i class="devicon-redux-original colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+          </div>
+          <div class="skill__card">
+            <h3>Back-end</h3>
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-express-original-wordmark"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+          </div>
+          <div class="skill__card">
+            <h3>Herramientas</h3>
+            <i class="devicon-git-plain-wordmark colored"></i>
+            <i class="devicon-npm-original-wordmark colored"></i>
           </div>
         </div>
-        <div class="project__card">
-          <img
-            class="project__card__img"
-            src="https://placeimg.com/300/300/tech"
-            alt="proyecto"
-          />
-          <div class="project__card__info">
-            <h4 class="project__card__title">Nombre del proyecto</h4>
-            <p class="project__card__p">Creado con React</p>
-            <button class="project__card__btn">Ver más</button>
+      </section>
+      <section id="proyectos" data-theme>
+        <h2>Proyectos</h2>
+        <div class="container projects__container">
+          <div class="project__card">
+            <img
+              class="project__card__img"
+              src="./assets/blog-image.png"
+              alt="proyecto"
+            />
+            <div class="project__card__info">
+              <h4 class="project__card__title">Nombre del proyecto</h4>
+              <p class="project__card__p">Creado con React</p>
+              <button class="project__card__btn">Ver más</button>
+            </div>
+          </div>
+          <div class="project__card">
+            <img
+              class="project__card__img"
+              src="https://placeimg.com/300/300/tech"
+              alt="proyecto"
+            />
+            <div class="project__card__info">
+              <h4 class="project__card__title">Nombre del proyecto</h4>
+              <p class="project__card__p">Creado con React</p>
+              <button class="project__card__btn">Ver más</button>
+            </div>
+          </div>
+          <div class="project__card">
+            <img
+              class="project__card__img"
+              src="https://placeimg.com/300/300/tech"
+              alt="proyecto"
+            />
+            <div class="project__card__info">
+              <h4 class="project__card__title">Nombre del proyecto</h4>
+              <p class="project__card__p">Creado con React</p>
+              <button class="project__card__btn">Ver más</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer id="contacto">
-      <div class="footer__socialmedia">
-        <a href="">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="">
-          <i class="fa-regular fa-envelope"></i>
-        </a>
-        <a href="">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-      <div class="footer__contact">
-        <h2>Form</h2>
+      <div class="container footer__container">
+        <div class="footer__socialmedia">
+          <a href="">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="footer__contact">
+          <form class="contact__form">
+            <legend class="contact-form-legend">Contacto</legend>
+            <input
+              type="text"
+              name="name"
+              placeholder="Escribe tu nombre"
+              title="El nombre sólo acepta letras y espacios en blanco"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email"
+              title="Email incorrecto"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            />
+            <textarea
+              name="comments"
+              placeholder="Escribe tu mensaje"
+              title="El comentario es requerido"
+              data-pattern="^.{1,255}$"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+            <a
+              href="mailto:axelnicolassparta@gmail.com"
+              id="mailto"
+              style="display: none"
+            ></a>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/app.js" type="module"></script>

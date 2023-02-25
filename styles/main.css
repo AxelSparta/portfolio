@@ -1,8 +1,9 @@
 :root {
-  --dark-color: #2d3436;
+  --dark-color: #1E212D;
   --dark-dark-color: #202425;
   --light-color: #f6f6f6;
-  --dark-light: #727272;
+  --dark-light: #cfcfcf;
+  --blue-color: #2B3467;
   --primary-color: #fed330;
   scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;

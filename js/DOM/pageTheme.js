@@ -9,21 +9,27 @@ export default function pageTheme (btn, elementsSelector) {
     $elements.forEach(el => {
       el.classList.add('dark-theme')
     })
-    $btn.innerHTML = 'Tema claro'
+    $btn.innerHTML = `
+      <i class="fa-regular fa-sun"></i>
+    `
   }
 
   d.addEventListener('click', e => {
-    if (e.target.matches(btn)) {
+    if (e.target.matches(btn) || e.target.matches(`${btn} *`)) {
       const theme = localStorage.getItem('theme')
       if (theme === 'dark') {
         localStorage.setItem('theme', 'light')
-        $btn.innerHTML = 'Tema oscuro'
+        $btn.innerHTML = `
+          <i class="fa-solid fa-moon"></i>
+        `
         $elements.forEach(el => {
           el.classList.remove('dark-theme')
         })
       } else {
         localStorage.setItem('theme', 'dark')
-        $btn.innerHTML = 'Tema claro'
+        $btn.innerHTML = `
+          <i class="fa-regular fa-sun"></i>
+        `
         $elements.forEach(el => {
           el.classList.add('dark-theme')
         })

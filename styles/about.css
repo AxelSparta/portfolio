@@ -1,8 +1,13 @@
 #sobre-mi {
-  padding: 4.75rem 2rem;
+  padding: 4.75rem 0;
 }
+
+#sobre-mi.dark-theme {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
 .card {
-  width: 70%;
   margin: 0 auto;
   border-radius: 5px;
   background-color: var(--light-color);
@@ -13,9 +18,14 @@
   text-align: center;
 }
 
+.card.dark-theme {
+  background-color: var(--dark-color);
+  border: thin solid var(--dark-light);
+}
+
 .card__img {
   display: block;
-  width: 300px;
+  width: 100%;
   object-fit: cover;
   height: 350px;
   border-radius: 5px 5px 0 0;
@@ -30,9 +40,8 @@
 .card__title--secondary {
   font-size: 1.25rem;
 }
-
 .about {
-  padding: 2rem 4rem;
+  padding: 0 1rem;
 }
 .about__title {
   margin-bottom: 1rem;
@@ -45,12 +54,15 @@
   line-height: 120%;
 }
 
-@media (min-width: 992px) {
-  #sobre-mi {
+@media (min-width: 768px) {
+  .sobre-mi {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .about {
+    padding-left: 2rem;
   }
   .card {
     min-width: 300px;

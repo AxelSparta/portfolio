@@ -1,21 +1,22 @@
-.skills__container {
+#habilidades {
+    background-color: var(--blue-color);
+    padding: 4.75rem 0;
     text-align: center;
-    padding: 4.75rem 1.5rem;
     color: white;
 }
+
 .skill__card {
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
-    background-color: #2B3467;
 }
 
 .skill__card i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: .75rem 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .skills__container {
         display: flex;
         justify-content: space-around;
